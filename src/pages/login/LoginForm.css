@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+   
+  .login-container {
+    width: 100%;
+    /* max-width: 400px; */
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+}
+.login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.login-form label {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 4px;
+  }
+  .login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+   
+  .login-subtitle {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+  }
+   
+  .login-subtitle a {
+    color: #007bff;
+    text-decoration: none;
+  }
+   
+  .login-subtitle a:hover {
+    text-decoration: underline;
+  }
+   
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+   
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+   
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+   
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+   
+  .login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+   
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+   
+  .login-divider {
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+   
+  .social-login-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+   
+  .facebook-button,
+  .google-button {
+    flex: 1;
+    margin: 0 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 10px;
+    cursor: pointer;
+  }
+   
+  .facebook-button:hover {
+    border-color: #3b5998;
+    color: #3b5998;
+  }
+   
+  .google-button:hover {
+    border-color: #db4437;
+    color: #db4437;
+  }

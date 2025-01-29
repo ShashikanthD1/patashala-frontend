@@ -1,42 +1,132 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
   text-align: center;
 }
+img{
+  max-width: 100%;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+nav.navbar.navbar-expand-sm.bg-dark.navbar-dark {
+  background: #fff !important;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.05);
+  padding: 13px 0;
+}
+.navbar-brand.logo_name{
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-right: 100px;
+  color: #00429e !important;
+  font-weight: 700;;
+}
+.navbar-expand-sm .navbar-collapse.menu-bar {
+  justify-content: space-between;
+  flex-basis: auto;
+  display: flex;
+}
+ul.navbar-nav.custom__navbar li a{
+  font-size: 16px;
+  color: #000;
+}
+ul.navbar-nav.custom__navbar {
+  gap: 25px;
+}
+ul.navbar-nav.custom__navbar li a.login_new, ul.navbar-nav.custom__navbar li a.signup_new {
+  background: #00429e;
+  padding: 9px 20px;
+  border-radius: 3px;
+  color: #fff;
+}
+input.form-control.me-2.form_new {
+  height: 50px;
+  padding: 0 60px 0 8px;
+}
+button.btn.btn-primary.search_btn {
+  padding: 0 24px;
+}
+section.banner_sec {
+  padding: 60px;
+  background: #f6f6f6;
+}
+figure.left_side img {
+  border-radius: 20px;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+.banner_text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.banner_text h2 a {
+  text-decoration: none;
+  color: #6c6c6c;
+}
+.search_schools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #ccc; */
+  background: #fff;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  padding: 20px;
+}
+.search_schools p {
+  margin-bottom: 0;
+}
+button.search_btn {
+  background: #00429e;
+  padding: 12px 28px;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  width: 150px;
+}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.search_schools p {
+  font-size: 25px;
+  font-weight: 500;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.align-ceter-row {
+  align-items: center;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.banner_text h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 55px;
 }
 
-@keyframes logo-spin {
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
