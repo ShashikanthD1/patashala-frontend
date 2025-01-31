@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar"
 import {routes} from "./routes/AppRoutes"
+import Location from './pages/location/Location';
 
 
 const App = () => {
+  
   return (
     <Router>
       <Navbar/>
@@ -16,7 +18,11 @@ const App = () => {
           />
         ))}
       </Routes>
+      <div>
+      <Location />
+    </div>
     </Router>
+    
   );
 };
 

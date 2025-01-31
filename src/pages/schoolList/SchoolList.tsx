@@ -12,46 +12,50 @@ const schoolsData = [
 
 const SchoolList = () => {
   return (
-    <div className="schools-list">
-      <div className="filters">
-        <h4>Filter by Board</h4>
-        <ul>
-          <li><input type="checkbox" /> CISCE</li>
-          <li><input type="checkbox" /> CBSE</li>
-          <li><input type="checkbox" /> BSEAP</li>
-          <li><input type="checkbox" /> BSEB</li>
-          <li><input type="checkbox" /> DBSE</li>
-        </ul>
+    <>
+      <div className="container">
+        <div className="schools-list">
+          <div className="filters">
+            <h4>Filter by Board</h4>
+            <ul>
+              <li><input type="checkbox" /> CISCE</li>
+              <li><input type="checkbox" /> CBSE</li>
+              <li><input type="checkbox" /> BSEAP</li>
+              <li><input type="checkbox" /> BSEB</li>
+              <li><input type="checkbox" /> DBSE</li>
+            </ul>
 
-        <h4>Filter by Medium</h4>
-        <ul>
-          <li><input type="checkbox" /> English</li>
-          <li><input type="checkbox" /> Hindi</li>
-          <li><input type="checkbox" /> Bengali</li>
-          <li><input type="checkbox" /> Assamese</li>
-        </ul>
+            <h4>Filter by Medium</h4>
+            <ul>
+              <li><input type="checkbox" /> English</li>
+              <li><input type="checkbox" /> Hindi</li>
+              <li><input type="checkbox" /> Bengali</li>
+              <li><input type="checkbox" /> Assamese</li>
+            </ul>
 
-        <h4>Distance</h4>
-        <input type="range" min="0" max="10" step="0.5" />
-      </div>
-
-      <div className="schools">
-        {schoolsData.map((school, index) => (
-          <div className="school-card" key={index}>
-            <h5>{school.name}</h5>
-            <p>{school.address}</p>
-            <div className="school-info">
-              <span>{school.distance}</span>
-              <div className="rating">
-                {Array(5).fill().map((_, i) => (
-                  <span key={i} className={i < school.rating ? "star filled" : "star"}>★</span>
-                ))}
-              </div>
-            </div>
+            <h4>Distance</h4>
+            <input type="range" min="0" max="10" step="0.5" />
           </div>
-        ))}
+
+          <div className="schools">
+            {schoolsData.map((school, index) => (
+              <div className="school-card" key={index}>
+                <h5>{school.name}</h5>
+                <p>{school.address}</p>
+                <div className="school-info">
+                  <span>{school.distance}</span>
+                  <div className="rating">
+                    {Array(5).fill().map((_, i) => (
+                      <span key={i} className={i < school.rating ? "star filled" : "star"}>★</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,35 +1,41 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Box, Grid, Typography, Button, Container } from '@mui/material';
 import banners from '../../assets/school_finder.jpg';
+import Location from '../location/Location';
 
 function Banner() {
     return (
-
-        <section className='banner_sec'>
-            <article className='container'>
-                <div className='row align-ceter-row'>
-                    <div className='col-sm-6'>
-                        <figure className='left_side'>
-                            <img src={banners} alt="School Finder Banner" />
-                        </figure>
-                    </div>
-                    <div className='col-sm-6'>
-                        <div className='banner_text_Search'>
-                            <div className='banner_text'>
-                                <h2>Finding the best school for your kid is now just a <Link to="#">click away!</Link></h2>
-                            </div>
-                            <div className='search_schools'>
-                                <p>Find Schools Near Me</p>
-                                <button className='search_btn'>Search</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
+        <Box sx={{ backgroundColor: '#f5f5f5', py: 6 }}>
+            <Container>
+                <Grid container alignItems="center" spacing={4}>
+                    <Grid item xs={12} md={6}>
+                        <Box component="img" src={banners} alt="School Finder Banner" sx={{ width: '100%', borderRadius: 2 }} />
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Box>
+                            <Typography variant="h4" component="h2" gutterBottom>
+                                Finding the best school for your kid is now just a{' '}
+                                <Link to="#" style={{ textDecoration: 'none', color: '#1976d2' }}>
+                                
+                                <Location/>
+                                
+                                click away!</Link>
+                            </Typography>
+                            <Box sx={{ mt: 3 }}>
+                                <Typography variant="subtitle1" gutterBottom>
+                                    Find Schools Near Me
+                                </Typography>
+                                <Button variant="contained" color="primary" size="large">
+                                    Search
+                                </Button>
+                            </Box>
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Container>
+        </Box>
     );
 }
 
 export default Banner;
-
-

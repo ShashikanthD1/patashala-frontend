@@ -32,7 +32,7 @@
     font-weight: bold;
   }
   
-  .signup-form input[type="text"],
+  /* .signup-form input[type="text"],
   .signup-form input[type="email"],
   .signup-form input[type="password"] {
     width: 100%;
@@ -41,7 +41,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-  }
+  } */
   
   .signup-form .terms {
     display: flex;
@@ -67,4 +67,29 @@
   .signup-form button:hover {
     background-color: #0056b3;
   }
-  
+  .css-gg4vpm{
+    gap: 5px;
+  }
+
+  .signup-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.css-mdesv3-MuiButtonBase-root-MuiIconButton-root{
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background-color: red !important;
+  color: #fff;
+}
+  /* .signup-form-container{
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px
+} */
+.MuiBox-root.css-sb42wy .css-1umw9bq-MuiSvgIcon-root {
+  fill: #fff !important;
+  font-size: 17px;
+}
